@@ -12,7 +12,7 @@ My special thanks to: Alex & Marta, for their time, patience, and escape rooms; 
 
 # Description
 
-PianoLuce uses side-mounted IR reflection detectors to estimate the velocity of keypresses. An IR reflection sensor (QRE1113) above each key measures reflected IR light. These sensors are switched on and read in sequence via 16 channel 4067 analog multiplexers. Each PCB spans an octave, and boards communicate via I2C, although SPI may be possible.
+PianoLuce uses side-mounted IR reflection detectors to estimate the velocity of keypresses. An IR reflection sensor (QRE1113) above each key measures reflected IR light. These sensors are switched on and read in sequence via 16 channel 4067 analog multiplexers. Each PCB spans an octave, and boards communicate via I2C, although SPI may be possible. A master controller is responsible for controlling calibration, receiving keypress data from each slave board, and sending midi.
 
 # Resources
 - Arduino Code
@@ -22,5 +22,5 @@ PianoLuce uses side-mounted IR reflection detectors to estimate the velocity of 
 # Flaws
 
 As mentioned, PianoLuce is only partially developed, and there are many factors to consider in an improved future version. Please bear these in mind before using this project as a basis for your own.
-- Currently, keypresses on black keys are detected with ambient IR, which is obviously highly variable. More reliable measurement can be made by adding white stickers to each black key. A simpler to install system may use 
-- 
+- Currently, keypresses on black keys are detected with ambient IR, which is obviously highly variable. More reliable measurement can be made by adding white stickers to each black key, and altering the current code to light the appropriate IR LED. A simpler to install system may use two reflection sensors to sense the void left by the black key when it is pressed.
+- I2C is not designed for long range transmission: although the current system works (multi-slave setup), it may be susceptible to noise, and there is significant latency introduced by evaluating 7 slave boards. Improved data transmission between master and slaves should be implemented.
