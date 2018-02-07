@@ -3,11 +3,11 @@
 PianoLuce is a keypress detector for pianos, based on the arduino platform. This is a halted project, but others trying to achieve
 similar aims may find these resources useful.
 
-This project took inspiration from the development on the Magnetic Resonator Piano (http://www.eecs.qmul.ac.uk/~andrewm/mrp.html) and similar, commercial keypress detectors like the Moog Piano Bar.
+This project took inspiration from the development on the [Magnetic Resonator Piano](http://www.eecs.qmul.ac.uk/~andrewm/mrp.html) and similar, commercial keypress detectors like the Moog Piano Bar.
 
 Most of the development was in aid of a performance by Marta Mołodyńska-Wheeler in June 2017, where live visuals wer generated from her PhD performance of Scriabin's 24 preludes.
 
-My special thanks to: Alex & Marta (http://www.martamolo.com/), for their time, patience, and escape rooms; to James Medd (http://jamesmedd.co.uk/) for his assistance designing a mounting system, and coming up with the name, PianoLuce; and to Alexander Lang (http://langster1980.blogspot.co.uk/), for his usual excellent support.
+My special thanks to: [Alex & Marta](http://www.martamolo.com/), for their time, patience, and escape rooms; to [James Medd](http://jamesmedd.co.uk/) for his assistance designing a mounting system, and coming up with the name, PianoLuce; and to [Alexander Lang](http://langster1980.blogspot.co.uk/), for his usual excellent support.
 
 
 ## Description
