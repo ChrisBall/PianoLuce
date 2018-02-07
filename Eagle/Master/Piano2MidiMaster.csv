@@ -1,0 +1,10 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"";
+"1";"";"CPOL-USE2.5-6";"E2,5-6";"C1";"POLARIZED CAPACITOR, American symbol";"";
+"2";"";"PINHD-1X2";"1X02";"JP2, JP3";"PIN HEADER";"";
+"1";"";"PINHD-1X8BIG";"1X08-BIG";"JP1";"PIN HEADER";"";
+"1";"";"PINHD-2X5IDC";"2X05IDC";"OUT";"PIN HEADER";"";
+"1";"";"R-US_0207/12";"0207/12";"SDA_PULLUP";"RESISTOR, American symbol";"";
+"1";"";"R-US_0207/15";"0207/15";"SCL_PULLUP";"RESISTOR, American symbol";"";
+"1";"ARDUINOR3-DIMENSION";"ARDUINOR3-DIMENSION";"ARDUINOR3";"U1";"This is a new object for the new Arduino R3 - with extra pins that you may want to use (such as IOref, and duplicated A4/A5";"";
+"1";"STEREOJACK";"STEREOJACK";"STX3100";"SUSTAIN";"MIC/HEADPHONE JACK";"";
+"3";"TACTILE-SWITCH-PTH";"TACTILE-SWITCH-PTH";"TAC-SWITCH-PTH";"LEFT, RIGHT, SELECT";"Tactile Switch 4 Pins, SPST NO";"";
