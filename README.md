@@ -15,9 +15,9 @@ My special thanks to: Alex & Marta (http://www.martamolo.com/), for their time, 
 PianoLuce uses side-mounted IR reflection detectors to estimate the velocity of keypresses. An IR reflection sensor (QRE1113) above each key measures reflected IR light. These sensors are switched on and read in sequence via 16 channel 4067 analog multiplexers. Each PCB spans an octave, and boards communicate via I2C, although SPI may be possible. A master controller is responsible for controlling calibration, receiving keypress data from each slave board, getting data from a sustain pedal, and sending midi over USB.
 
 ## Resources
-- [Arduino Code] (https://github.com/ChrisBall/PianoLuce/tree/master/Arduino)
-- [Eagle Files] (https://github.com/ChrisBall/PianoLuce/tree/master/Eagle)
-- [Mount design and cad files] (https://github.com/ChrisBall/PianoLuce/tree/master/SVG)
+- [Arduino Code](https://github.com/ChrisBall/PianoLuce/tree/master/Arduino)
+- [Eagle Files](https://github.com/ChrisBall/PianoLuce/tree/master/Eagle)
+- [Mount design and cad files](https://github.com/ChrisBall/PianoLuce/tree/master/SVG)
 
 ## Flaws and possible improvements
 
