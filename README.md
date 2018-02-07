@@ -19,6 +19,7 @@ PianoLuce uses side-mounted IR reflection detectors to estimate the velocity of 
 - [Arduino Code](https://github.com/ChrisBall/PianoLuce/tree/master/Arduino)
 - [Eagle Files](https://github.com/ChrisBall/PianoLuce/tree/master/Eagle)
 - [Mount design and cad files](https://github.com/ChrisBall/PianoLuce/tree/master/SVG)
+- [Other Media](https://github.com/ChrisBall/PianoLuce/tree/master/Media)
 
 ## Flaws and possible improvements
 
