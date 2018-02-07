@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+### PianoLuce
 
-You can use the [editor on GitHub](https://github.com/ChrisBall/PianoLuce/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+PianoLuce is a keypress detector for pianos, based on the arduino platform. This is a halted project, but others trying to achieve
+similar aims may find these resources useful.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This project took inspiration from the development on the Magnetic Resonator Piano (http://www.eecs.qmul.ac.uk/~andrewm/mrp.html) and similar, commercial keypress detectors like the Moog Piano Bar.
 
-### Markdown
+Most of the development was in aid of a performance by Marta Mołodyńska-Wheeler in June 2017, where live visuals wer generated from her PhD performance of Scriabin's 24 preludes.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+My special thanks to: Alex & Marta, for their time, patience, and escape rooms; to James Medd (http://jamesmedd.co.uk/) for his assistance designing a mounting system; and to Alexander Lang (http://langster1980.blogspot.co.uk/), for his support.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# Description
 
-- Bulleted
-- List
+PianoLuce uses side-mounted IR reflection detectors to estimate the velocity of keypresses. An IR reflection sensor (QRE1113) above each key measures reflected IR light. These sensors are switched on and read in sequence via 16 channel 4067 analog multiplexers. Each PCB spans an octave, and boards communicate via I2C, although SPI may be possible.
 
-1. Numbered
-2. List
+# Resources
+- Arduino Code
+- Eagle Files
+- Mount design and cad files
 
-**Bold** and _Italic_ and `Code` text
+# Flaws
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ChrisBall/PianoLuce/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+As mentioned, PianoLuce is only partially developed, and there are many factors to consider in an improved future version. Please bear these in mind before using this project as a basis for your own.
+- Currently, keypresses on black keys are detected with ambient IR, which is obviously highly variable. More reliable measurement can be made by adding white stickers to each black key. A simpler to install system may use 
+- 
