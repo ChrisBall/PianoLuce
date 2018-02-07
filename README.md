@@ -1,6 +1,8 @@
 # PianoLuce
 
-PianoLuce is a keypress detector for pianos, based on the Arduino platform. This is a halted project, but others trying to achieve similar aims may find these resources useful.
+PianoLuce is a keypress detector for pianos, based on the Arduino platform. This project is on hiatus, having achieved it's main aim, but others trying to achieve similar results may find these resources useful.
+
+![alt text](https://github.com/ChrisBall/PianoLuce/blob/master/Media/Whole%20setup.jpg "PianoLuce in use")
 
 This project took inspiration from the development on the [Magnetic Resonator Piano](http://www.eecs.qmul.ac.uk/~andrewm/mrp.html) and similar, commercial keypress detectors like the Moog Piano Bar.
 
