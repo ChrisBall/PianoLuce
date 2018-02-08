@@ -6,14 +6,14 @@ PianoLuce is a keypress detector for pianos, based on the Arduino platform. This
 
 This project took inspiration from the development on the [Magnetic Resonator Piano](http://www.eecs.qmul.ac.uk/~andrewm/mrp.html) and similar, commercial keypress detectors like the Moog Piano Bar.
 
-Most of the development was in aid of a performance by Marta Mołodyńska-Wheeler in June 2017, where live visuals were generated from her PhD performance of Scriabin's 24 preludes.
+Most of the development was in aid of a performance by Marta Mołodyńska-Wheeler in June 2017, where live visuals were generated from her PhD performance of Scriabin's 24 preludes. The vision of the project was to re-create a modern day version of [Clavier à lumières](https://en.wikipedia.org/wiki/Clavier_%C3%A0_lumi%C3%A8res) by creating a non-intrusive device which could be attached to an expensive piano and create colored visuals.  Alex (Marta's husband), CEO of the IOT company [Kolomolo](www.kolomolo.com), connected with me during his research and commissioned the work.
 
 My special thanks to: [Alex & Marta](http://www.martamolo.com/), for their time, patience, and escape rooms; to [James Medd](http://jamesmedd.co.uk/) for his assistance designing a mounting system, and coming up with the name, PianoLuce; and to [Alexander Lang](http://langster1980.blogspot.co.uk/), for his usual excellent support.
 
 
 ## Description
 
-PianoLuce uses side-mounted IR reflection detectors to estimate the velocity of keypresses. An IR reflection sensor (QRE1113) above each key measures reflected IR light. These sensors are switched on and read in sequence via 16 channel 4067 analog multiplexers. Each PCB spans an octave, and boards communicate via I2C, although SPI may be possible. A master controller is responsible for controlling calibration, receiving keypress data from each slave board, getting data from a sustain pedal, and sending midi over USB.
+PianoLuce uses side-mounted IR reflection detectors to estimate the velocity of keypresses. An IR reflection sensor (QRE1113) above each key measures reflected IR light. These sensors are switched on and read in sequence by an ATMEGA328P via 16 channel 4067 analog multiplexers. Each PCB spans an octave (12 notes), and boards communicate via I2C, although SPI may be possible. A master controller is responsible for controlling calibration, receiving keypress data from each slave board, getting data from a sustain pedal, and sending midi over USB.
 
 ## Resources
 - [Arduino Code](https://github.com/ChrisBall/PianoLuce/tree/master/Arduino)
